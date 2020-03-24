@@ -14,7 +14,7 @@ async function add(user) {
 }
 
 function get() {
-  return db("users").select("id", "username");
+  return db("users").select("id", "username", "department");
 }
 
 function getBy(filter) {
